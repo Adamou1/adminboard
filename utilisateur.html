@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="parametre.css">
+    <title>Utilisateur</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light  bg-dark">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand text-white " href="" style="margin-left: 10vw;">AdminBoard</a>
+            </div>
+            <button class="navbar-toggler" type="button"data-bs-toggle="collapse"        data-bs-target="#navbarSupportedContent"      aria-controls="navbarSupportedContent" aria-expanded="false"      aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary "aria-current="page" href="index.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary " href="post.html">posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary " href="categorie.html" >Categories<a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-secondary " href="utilisateur.html">Utilisateurs</a>
+                    </li>
+                </ul>
+                <div>
+                    <ul class="nav justify-content-end" style="margin-right: 10vw;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-secondary" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="bi bi-person-fill"></i>Bienvenue Houssein</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="profil.html"><i class="bi bi-person-circle"></i>Profil</a></li>
+                                <li><a class="dropdown-item" href="parametre.html"><i class="bi bi-gear-fill me-1"></i>Parametre</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-secondary" href="logout.html"><i class="bi bi-person-x-fill"></i>Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="navbar navbar-expand-lg navbar-light  bg-warning">
+            <div class="container-fluid">
+                <div style="margin-left: 10vw;">
+                    <a class="navbar-brand text-white ms-1" href="index.html" style="margin-left: 10vw; font-size: 4vw;"><i class="bi bi-people-fill display-5"></i></i>Users</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class=" bg-light p-3">
+        <div class="container" style="margin-left: 40vw;">
+            <div class="input-group mb-1 w-50">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-primary bg-primary input-group-text text-white" id="basic-addon2">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container">
+        <div class=" mt-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3>Les postes recents</h3>
+                </div>
+                <div class="card-block">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <td>Houssein Abil</td>
+                                <td>moi@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td>Takef Tarik</td>
+                                <td>Take@test.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>		
+            </div>
+        </div>
+    </section>
+    <footer class="bg-dark p-4 mt-5">
+        <div class="text-center text-white">
+            <p>copyright @ 2019 adminboard</p>
+        </div>
+    </footer>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
